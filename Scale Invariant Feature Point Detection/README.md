@@ -60,13 +60,15 @@ Get two images, taken from the same scene but with scale transformations. Detect
 
 ## Realization
 
-I use the image similar to the sample image, and I process the image with scale transformations. Results through my realization are showing below*(I don't spend great effort in parameter optimization, so the result cannot represent the algorithm completely)*:
+I use the image similar to the sample image, and I process the image with scale transformations. Results through my realization are showing below(*I don't spend great effort in parameter optimization, so the result cannot represent the algorithm completely*):
 
-<img src="img/result.png" alt="result" style="zoom:50%;" /><img src="img/result@large.png" alt="result@large" style="zoom:50%;" />
+<img src="https://upload-images.jianshu.io/upload_images/12014150-9d99375732e74447.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="result.png" width="50%;" /><img src="https://upload-images.jianshu.io/upload_images/12014150-c74e54ac098d915c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="result@large.png" width="50%;" />
+
+
 
 > I also found something interesting, when setting the hyperparameter into sigma0=1, total_num=5, scale_ratio=1, threshold=0.005. The feature points detected by blob detector are all corner point of the object, it is well represent the edge of objects in the image. It is really interesting.
 >
-> <img src="img/result_special.png" alt="result_special" style="zoom: 50%;" />
+> <img src="https://upload-images.jianshu.io/upload_images/12014150-fdea072c8da44783.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="result_special.png" width="50%;" />
 
 ### Build Scale Spatial Space
 

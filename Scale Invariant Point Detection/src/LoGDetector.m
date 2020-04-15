@@ -14,7 +14,7 @@ for i = 1:total_num
 end
 
 % find local maximum
-scale_space = scale_space .^ 2;     % 整体平方，简化计算
+scale_space = scale_space .^ 2;     % ???
 max_values = zeros(M, N, total_num);
 for i = 1:total_num
     max_values(:, :, i) = ordfilt2(scale_space(:, :, i), 5^2, ones(5,5));   % 对图像A中大小为domain矩阵大小内的非零像素值进行升序排序，取第order个值作为输出像素值
@@ -40,7 +40,7 @@ for i=1:total_num
     [row, col] = find(blobs(:, :, i));
     rows = [rows; row];
     cols = [cols; col];
-    temp_redius = sigma * scale_factor.^(i-1) * sqrt(2);
+    temp_redius = sigma0 * scale_factor.^(i-1) * sqrt(2);
     radius = repmat(temp_redius, [size(row,1),1]);
     radiuses = [radiuses; radius];
 end

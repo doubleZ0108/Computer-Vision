@@ -4,7 +4,7 @@ clc;
 file_path = '../img/';
 file_name = 'butterfly.jpg';
 
-sigma0 = 2.5;
+sigma0 = 1;
 total_num = 5;
 scale_factor = 2;
 threshold = 0.005;

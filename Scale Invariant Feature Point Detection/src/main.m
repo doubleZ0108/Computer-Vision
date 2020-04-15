@@ -7,7 +7,6 @@ file_name = 'butterfly.jpg';
 
 sigma0 = 1;
 total_num = 5;
-% scale_ratio = 1; % ฑ฿ิต
 scale_ratio = 2;
 threshold = 0.005;
 

@@ -1,11 +1,11 @@
 function [rows, cols, radiuses] = LoGDetector(img, sigma0, total_num, scale_ratio, threshold)
-% LoG detector for scale invariant point detector
+% LoG detector for scale invariant point detection
 %
 % @param
 % img: origin image
 % sigma0: initial sigma for Laplacian of Gaussian filter
 % total_num: number of scale-spatial space
-% scale_factor: ratio of adjacent scale-spatial space
+% scale_ratio: ratio of adjacent scale-spatial space
 % threshold: non-maxima suppression threshold
 
 img = im2double(rgb2gray(img));
@@ -25,13 +25,12 @@ for i = 1:total_num
 end
 
 %% find local maximum in image(space) scale
-scale_spatial_space = scale_spatial_space .^ 2;     % ???
+scale_spatial_space = scale_spatial_space .^ 2;     % increase the difference
 max_values = zeros(M, N, total_num);
 for i = 1:total_num
     max_values(:, :, i) = ordfilt2(scale_spatial_space(:, :, i), 5^2, ones(5,5));   % ascending order for scale spatial space
                                                                                     % domain is 5*5
-                                                                                    % take 5^2th for output pixel
-    % 对图像A中大小为domain矩阵大小内的非零像素值进行升序排序，取第order个值作为输出像素值
+                                                                                    % take 5^2th as output pixel
 end
 
 %% find local maximum in sigma scale

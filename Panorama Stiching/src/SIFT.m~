@@ -7,8 +7,7 @@ function SIFT(img_l, img_r)
 
 ind = RANSAC(match_left, match_right);
 
-PotentialCorrespondences(img_l, img_r, match_left, match_right);
-InlierCorrespondences(img_l, img_r, match_left, match_right, ind);
+PotentialCorrespondences(img_l, img_r, match_left, match_right)
 end
 
 function [F, D] = SIFT_for_single_image(img)
@@ -68,7 +67,7 @@ for i=1:n
     % pick 4 random points
     [~,index] = datasample(match_left(1,:), 4);
     l = match_left(:, index);   % 4 random points from left image features to perform H matrix
-    r = match_right(:, index);  % corresponding 4 matches from the right image
+    r = matcj_right(:, index);  % corresponding 4 matches from the right image
     
     l1 = l(1,:); l2 = l(2,:); l3 = l(3,:); l4 = l(4,:);
     r1 = r(1,:); r2 = r(2,:); r3 = l(3,:); r4 = l(4,:);
@@ -113,13 +112,11 @@ end
 function PotentialCorrespondences(img_l, img_r, match_left, match_right)
 figure
 showMatchedFeatures(img_l, img_r, match_left', match_right', 'montage');
-title('set of potential matches');
+title('set of inliers');
 legent('matchedPts_left', 'matchedPts_right');
 end
 
 function InlierCorrespondences(img_l, img_r, match_left, match_right, ind)
 figure
 showMatchedFeatures(img_l, img_r, match_left(:,ind)', match_right(:,ind)', 'montage');
-title('set of inliers');
-legent('matchedPts_left', 'matchedPts_right');
-end
+

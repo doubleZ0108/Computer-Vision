@@ -5,7 +5,7 @@ function SIFT(img_l, img_r)
 
 [match_left, match_right] = MatchDescriptors(F_l, D_l, F_r, D_r);
 
-ind = RANSAC(match_left, match_right);
+ind = RANSAC(match_left, match_right)
 
 PotentialCorrespondences(img_l, img_r, match_left, match_right);
 InlierCorrespondences(img_l, img_r, match_left, match_right, ind);
@@ -60,18 +60,18 @@ n = ceil(log(1-p) / log(1-(1-e)^s));    % number of iterations
 % initial
 inlier_count_max = 0;
 s = size(match_left, 2);
-inline_count = 0;
+inlier_count = 0;
 H_best = zeros(3,3);
 
 % iterations
 for i=1:n
     % pick 4 random points
     [~,index] = datasample(match_left(1,:), 4);
-    l = match_left(:, index);   % 4 random points from left image features to perform H matrix
-    r = match_right(:, index);  % corresponding 4 matches from the right image
+    l = match_left(:, index)';   % 4 random points from left image features to perform H matrix
+    r = match_right(:, index)';  % corresponding 4 matches from the right image
     
     l1 = l(1,:); l2 = l(2,:); l3 = l(3,:); l4 = l(4,:);
-    r1 = r(1,:); r2 = r(2,:); r3 = l(3,:); r4 = l(4,:);
+    r1 = r(1,:); r2 = r(2,:); r3 = r(3,:); r4 = r(4,:);
     % Direct Linear Transformation
     M = [
            r1(1) r1(2)  1    0     0     0  -r1(1)*l1(1) -r1(2)*l1(1) -l1(1);
@@ -102,10 +102,9 @@ for i=1:n
     inlier_count = size(find(inliers), 2);  % number of inliers
     if inlier_count > inlier_count_max
         inlier_count_max = inlier_count;
-        ind = fine(inliers);
+        ind = find(inliers);
         H_best = H;
-    end
-    
+    end 
 end
 
 end
@@ -114,12 +113,12 @@ function PotentialCorrespondences(img_l, img_r, match_left, match_right)
 figure
 showMatchedFeatures(img_l, img_r, match_left', match_right', 'montage');
 title('set of potential matches');
-legent('matchedPts_left', 'matchedPts_right');
+legend('matchedPts_left', 'matchedPts_right');
 end
 
 function InlierCorrespondences(img_l, img_r, match_left, match_right, ind)
 figure
 showMatchedFeatures(img_l, img_r, match_left(:,ind)', match_right(:,ind)', 'montage');
 title('set of inliers');
-legent('matchedPts_left', 'matchedPts_right');
+legend('matchedPts_left', 'matchedPts_right');
 end

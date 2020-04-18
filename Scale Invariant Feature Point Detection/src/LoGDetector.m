@@ -7,6 +7,11 @@ function [rows, cols, radiuses] = LoGDetector(img, sigma0, total_num, scale_rati
 % total_num: number of scale-spatial space
 % scale_ratio: ratio of adjacent scale-spatial space
 % threshold: non-maxima suppression threshold
+%
+% @return
+% rows: row coordinate of feature points
+% cols: col coordinate of feature points
+% radiuses: radius of feature points
 
 img = im2double(rgb2gray(img));
 [M, N] = size(img);

@@ -1,14 +1,22 @@
-function [match_left, match_right] = MatchDescriptors(F_l, D_l, F_r, D_r)
+function [match_l, match_r] = MatchDescriptors(F_l, D_l, F_r, D_r)
+% matches the two sets of SIFT descriptors
+%
+% @param
+% F_l: feature frame of left image
+% D_l: descriptor of left image
+% F_r: feature frame of right image
+% D_r: descriptor of right image
+%
+% @return
+% match_l: coordinates of the matches point in left image
+% match_r: coordinates of the matches point in right image
 
-% MATCHES = vl_ubcmatch(DESCR1, DESCR2) matches the two sets of SIFT
-% descriptors DESCR1 and DESCR2.
-% 
-% [MATCHES,SCORES] = vl_ubcmatch(DESCR1, DESCR2) retuns the matches and
-% also the squared Euclidean distance between the matches.
-[matches, scores] = vl_ubcmatch(D_l, D_r);  % Match SIFT features
-[~, sort_index] = sort(scores, 'descend');     % 将scores排序
-matches = matches(:, sort_index);       % 按照scores的排列重新排列matches
-scores = scores(sort_index);
-match_left = F_l(1:2, matches(1,:));     % 左图matches点的坐标
-match_right = F_r(1:2, matches(2,:));
+[matches, distances] = vl_ubcmatch(D_l, D_r);  % match SIFT features(matches | squared Euclidean distance between the matches)
+
+[~, distances_index] = sort(distances, 'descend');     % descend sort for distances
+matches = matches(:, distances_index);      % sort matches according to the order of scores
+distances = distances(distances_index);     % sort distances
+
+match_l = F_l(1:2, matches(1,:));     % coordinates of the matches point in left image
+match_r = F_r(1:2, matches(2,:));     % corrdinates of the matches point in right image
 end

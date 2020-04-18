@@ -19,11 +19,11 @@ img_r = imresize(img_r, [M, N]);
 % matching the two sets of SIFT descriptors
 [match_l, match_r] = MatchDescriptors(F_l, D_l, F_r, D_r);
 
-% % calculate homography matrix estimation by using the correspondence pairs
-% % with RANSAC
-% ind = RANSAC_based_HomographyEstimation(match_l, match_r);
-% 
-% % plotting correspondences matches 
-% CorrespondenceEstimation(img_l, img_r, match_l, match_r, ind);
-% 
-% % stitch the transformed images
+% calculate homography matrix estimation by using the correspondence pairs
+% with RANSAC
+[inlier_pos, H_best] = RANSAC_based_HomographyEstimation(match_l, match_r);
+
+% plotting correspondences matches 
+CorrespondenceEstimation(img_l, img_r, match_l, match_r, inlier_pos);
+
+% stitch the transformed images

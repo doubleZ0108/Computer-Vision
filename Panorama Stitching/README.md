@@ -76,23 +76,23 @@ Get two images I1 and I2 of our campus and make sure that the major parts of I1 
 
 ## Realization
 
-<img src="https://upload-images.jianshu.io/upload_images/12014150-8fd6b290eaab379f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="jiading_feature.png" width="50%;" />
+<img  align="center"  align="center" src="https://upload-images.jianshu.io/upload_images/12014150-8fd6b290eaab379f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="jiading_feature.png" width="50%;" />
 
-<img src="https://upload-images.jianshu.io/upload_images/12014150-16a1bd28a96611a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="jiading_potential.png" width="50%;" />
+<img  align="center"  src="https://upload-images.jianshu.io/upload_images/12014150-16a1bd28a96611a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="jiading_potential.png" width="50%;" />
 
-<img src="https://upload-images.jianshu.io/upload_images/12014150-2b45ab88b9ca0088.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="jiading_inlier.png" width="50%;" />
+<img  align="center"  src="https://upload-images.jianshu.io/upload_images/12014150-2b45ab88b9ca0088.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="jiading_inlier.png" width="50%;" />
 
-<img src="https://upload-images.jianshu.io/upload_images/12014150-8e8e88c26a33c4f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="jiading_final.png" width="50%;" />
+<img  align="center"  src="https://upload-images.jianshu.io/upload_images/12014150-8e8e88c26a33c4f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="jiading_final.png" width="50%;" />
 
 <br/>
 
-<img src="https://upload-images.jianshu.io/upload_images/12014150-d9744c3eac263bc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="mountain_feature.png" width="50%;" />
+<img  align="center"  src="https://upload-images.jianshu.io/upload_images/12014150-d9744c3eac263bc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="mountain_feature.png" width="50%;" />
 
-<img src="https://upload-images.jianshu.io/upload_images/12014150-04bcd023af9cf107.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="mountain_potential.png" width="50%;" />
+<img  align="center"  src="https://upload-images.jianshu.io/upload_images/12014150-04bcd023af9cf107.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="mountain_potential.png" width="50%;" />
 
-<img src="https://upload-images.jianshu.io/upload_images/12014150-b1169dab8d615481.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="mountain_inlier.png" width="50%;" />
+<img  align="center"  src="https://upload-images.jianshu.io/upload_images/12014150-b1169dab8d615481.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="mountain_inlier.png" width="50%;" />
 
-<img src="https://upload-images.jianshu.io/upload_images/12014150-79dd9a42d0722b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="mountain_final.png" width="50%;" />
+<img  align="center"  src="https://upload-images.jianshu.io/upload_images/12014150-79dd9a42d0722b60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="mountain_final.png" width="50%;" />
 
 
 ### SIFT

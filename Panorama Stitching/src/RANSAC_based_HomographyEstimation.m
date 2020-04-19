@@ -13,9 +13,9 @@ function [inlier_pos, H_best] = RANSAC_based_HomographyEstimation(match_l, match
 % e = 0.4;
 % p = 0.99;
 % s = 6;
-% N = ceil(log(1-p) / log(1-(1-e)^s));    % number of iterations
-N = 100;
-threshold = 10;
+% N = ceil(log(1-p) / log(1-(1-e)^s));
+N = 100;            % number of iterations
+threshold = 10;     % error tolerance threshold
 
 %% initial
 match_num = size(match_l, 2);

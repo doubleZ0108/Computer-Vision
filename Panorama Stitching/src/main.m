@@ -3,7 +3,7 @@ clc
 
 file_path = '../img/';
 % file_name_l = 'mountain1.jpg'; file_name_r = 'mountain2.jpg';
-% file_name_l = 'jiading1.jpg'; file_name_r = 'jiading2.jpg';
+file_name_l = 'jiading1.jpg'; file_name_r = 'jiading2.jpg';
 
 %% set up vlfeat for SIFT
 SetupVlfeat();
@@ -14,8 +14,14 @@ img_l = imread([file_path file_name_l]); img_r = imread([file_path file_name_r])
 img_r = imresize(img_r, [M, N]);
 
 %% interest points detection using SIFT
+figure;
+subplot(1,2,1);
 [F_l, D_l] = SIFT(img_l);
+title('left image SIFT features');
+
+subplot(1,2,2);
 [F_r, D_r] = SIFT(img_r);
+title('right image SIFT features');
 
 %% matching the two sets of SIFT descriptors
 [match_l, match_r] = MatchDescriptors(F_l, D_l, F_r, D_r);

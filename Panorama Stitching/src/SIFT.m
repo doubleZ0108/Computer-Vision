@@ -23,10 +23,9 @@ rand_features = F(:, rand_features_index); % random features
 
 %% display feature points
 % figure;
-% imshow(img, []);
-% hold on
-% frame = vl_plotframe(rand_features);     % random features
-% set(frame, 'color', 'y', 'linewidth', 2);
-% title('image SIFT features');
+imshow(img, []);
+hold on;
+frame = vl_plotframe(rand_features);     % random features
+set(frame, 'color', 'y', 'linewidth', 2);
 
 end

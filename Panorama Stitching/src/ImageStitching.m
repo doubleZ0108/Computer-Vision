@@ -52,5 +52,6 @@ imgout(y_offset+1:y_offset+M_l, x_offset+1:x_offset+N_l, :) = img_l;
 
 figure;
 imshow(imgout);
+title('stitched image');
 
 end

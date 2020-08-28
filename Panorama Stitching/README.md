@@ -1,21 +1,17 @@
 # Panorama Stitching
 
-Table of Contents
-=================
-
-   * [Panorama Stitching](#panorama-stitching)
-      * [Problem Description](#problem-description)
-      * [Development Environment](#development-environment)
-      * [How to Run](#how-to-run)
-      * [Algorithm](#algorithm)
-      * [Realization](#realization)
-         * [SIFT](#sift)
-         * [Match Descriptors](#match-descriptors)
-         * [RANSAC based Homography Estimation](#ransac-based-homography-estimation)
-         * [Correspondence Estimation](#correspondence-estimation)
-         * [Image Stitching](#image-stitching)
-      * [About the Author](#about-the-author)
-      * [Project Structure](#project-structure)
+* [Problem Description](#problem-description)
+* [Development Environment](#development-environment)
+* [How to Run](#how-to-run)
+* [Algorithm](#algorithm)
+* [Realization](#realization)
+   * [SIFT](#sift)
+   * [Match Descriptors](#match-descriptors)
+   * [RANSAC based Homography Estimation](#ransac-based-homography-estimation)
+   * [Correspondence Estimation](#correspondence-estimation)
+   * [Image Stitching](#image-stitching)
+* [About the Author](#about-the-author)
+* [Project Structure](#project-structure)
 
 ------
 

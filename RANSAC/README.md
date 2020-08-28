@@ -1,16 +1,13 @@
 # RANSAC
 
-##### Table of Contents
-
-   * [RANSAC](#ransac)
-      * [Problem](#problem)
-      * [Algorithm](#algorithm)
-      * [Experiment Result](#experiment-result)
-      * [Implementation](#implementation)
-         * [Hyper Parameter](#hyper-parameter)
-         * [Linear Square](#linear-square)
-         * [RANSAC](#ransac-1)
-      * [About the Author](#about-the-author)
+* [Problem](#problem)
+* [Algorithm](#algorithm)
+* [Experiment Result](#experiment-result)
+* [Implementation](#implementation)
+   * [Hyper Parameter](#hyper-parameter)
+   * [Linear Square](#linear-square)
+   * [RANSAC](#ransac-1)
+* [About the Author](#about-the-author)
 
 ------
 

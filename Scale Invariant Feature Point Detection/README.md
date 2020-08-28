@@ -1,21 +1,17 @@
 # Scale Invariant Feature Point Detection
 
-Table of Contents
-=================
-
-   * [Scale Invariant Feature Point Detection](#scale-invariant-feature-point-detection)
-      * [Problem Description](#problem-description)
-      * [Development Environment](#development-environment)
-      * [How to Run](#how-to-run)
-      * [Algorithm](#algorithm)
-      * [Realization](#realization)
-         * [Build Scale Spatial Space](#build-scale-spatial-space)
-         * [Find Local Maximum](#find-local-maximum)
-         * [Non-maximum Suppression](#non-maximum-suppression)
-         * [Record Information from (x,y,sigma) Space](#record-information-from-xysigma-space)
-         * [Feature Point Visualization](#feature-point-visualization)
-      * [About the Author](#about-the-author)
-      * [Project Structure](#project-structure)
+* [Problem Description](#problem-description)
+* [Development Environment](#development-environment)
+* [How to Run](#how-to-run)
+* [Algorithm](#algorithm)
+* [Realization](#realization)
+   * [Build Scale Spatial Space](#build-scale-spatial-space)
+   * [Find Local Maximum](#find-local-maximum)
+   * [Non-maximum Suppression](#non-maximum-suppression)
+   * [Record Information from (x,y,sigma) Space](#record-information-from-xysigma-space)
+   * [Feature Point Visualization](#feature-point-visualization)
+* [About the Author](#about-the-author)
+* [Project Structure](#project-structure)
 
 ------
 

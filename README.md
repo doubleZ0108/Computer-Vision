@@ -6,7 +6,7 @@
 
 ## Body of Knowledge
 
-
+![BOK.png](https://upload-images.jianshu.io/upload_images/12014150-552e4a4c6227b2a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 <br/>
 
@@ -40,5 +40,3 @@
 | **Adviser**     | [Lin ZHANG](https://sse.tongji.edu.cn/Data/View/2847)        |
 | **Course Name** | [42029401 ](http://4m3.tongji.edu.cn/eams/courseTableForStd!taskTable.action?lesson.id=111111112481405)Computer Vision |
 | **Email**       | [dbzdbz@tongji.edu.cn](mailto:dbzdbz.tongji.edu.cn)          |
-
-

@@ -1,6 +1,8 @@
 # Computer Vision
 
-[toc]
+* [Body of Knowledge](#body-of-knowledge)
+* [Project Structure](#project-structure)
+* [About the Author](#about-the-author)
 
 ------
 
